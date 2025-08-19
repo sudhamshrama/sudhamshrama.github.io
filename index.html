@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sudhamsh Rama | Portfolio</title>
+  <meta name="description" content="Sudhamsh Rama — DevOps Engineer, Software Engineer, Cloud Engineer, AI/ML Engineer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Removed rocket emoji from favicon -->
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header class="nav">
+    <!-- Make logo clickable to home -->
+    <a href="#home" class="logo">SR</a>
+    <nav>
+      <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about"><i class="fa-regular fa-user"></i> About</a>
+      <!-- Removed Experience and Skills links -->
+      <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+      <a href="#certs"><i class="fa-solid fa-certificate"></i> Certifications</a>
+      <a href="#resume"><i class="fa-regular fa-file-lines"></i> Resume</a>
+      <a href="#contact"><i class="fa-regular fa-paper-plane"></i> Contact</a>
+    </nav>
+  </header>
+
+  <!-- 1. Main display picture on front page -->
+  <section id="home" class="section hero">
+    <div class="hero-text">
+      <p class="muted hi-there">Hi There!</p>
+      <h1>I'M <span class="accent">SUDHAMSH RAMA</span></h1>
+      <h2 class="typed">
+        <span id="typed-roles"
+          data-roles="DevOps Engineer|Software Engineer|Cloud Engineer|AI/ML Engineer"></span>
+        <span class="cursor">|</span>
+      </h2>
+
+      <div class="cta">
+        <a class="btn primary" href="#contact">Hire Me</a>
+        <a class="btn ghost" href="#projects">View Projects</a>
+      </div>
+
+      <div class="socials">
+        <a target="_blank" rel="noopener" href="https://github.com/sudhamshrama" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/sudhamsh-r" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:ramasudhamsh@gmail.com" aria-label="Email" class="mail-tooltip">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="tel:+19452783783" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/main-picture.avif" alt="Sudhamsh Rama main display" class="main-display-img"/>
+    </div>
+  </section>
+
+  <!-- 2. Professional Status card bullets aligned, no dots -->
+  <section class="section intro-strip">
+    <div class="intro-card">
+      <h3>Professional Status</h3>
+      <!-- 2. One line gap before bullets -->
+      <div style="height: 1em;"></div>
+      <ul class="status-list">
+        <li>F-1 Visa Holder</li>
+        <li>Legally authorised to work in USA</li>
+        <li>Open to relocation</li>
+      </ul>
+    </div>
+    <div class="intro-card">
+      <h3>What I Do</h3>
+      <p>
+        DevOps, Cloud, and Software Engineering with a pinch of AI/ML. I turn ideas into maintainable, monitored,
+        production-grade services.
+      </p>
+    </div>
+    <div class="intro-card">
+      <h3>Where I Am</h3>
+      <p>Dallas, Texas</p>
+    </div>
+  </section>
+
+  <!-- 4. About Me section: one paragraph, quote indentation, no colon in Beyond Code I love -->
+  <section id="about" class="section about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hey, I am <strong>Sudhamsh Rama</strong> from Dallas, Texas. I am currently pursuing my
+        <strong>Master’s in Computer Science</strong> at <strong>UT Arlington</strong> with a focus on
+        DevOps, Cloud, and AI-driven engineering. I’ve worked as an <strong>Associate DevOps Engineer</strong>
+        and <strong>Linux Administrator</strong>, building automation, deployments, and secure systems across
+        AWS and Azure. I love building reliable systems that are not just functional, but also easy to manage and maintain.
+      </p>
+      <!-- 3. Updated quote -->
+      <div class="quote">
+        "We are what we repeatedly do. Excellence, then, is not an act, but a habit. " - Aristotle
+      </div>
+      <h3>Beyond Code I love</h3>
+      <ul class="hobbies">
+        <li>Billiards</li>
+        <li>Travel</li>
+        <li>Photography</li>
+        <li>Gym</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <img src="assets/about-me.jpeg" alt="Sudhamsh Rama About Me" class="about-me-img"/>
+    </div>
+  </section>
+
+  <!-- 6. Update Professional Experience section -->
+  <section id="experience" class="section experience">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="dot"></div>
+        <div class="card">
+          <h3>Associate DevOps Engineer ( Summer Intern ) — <span class="muted">Approct, Delaware, USA</span></h3>
+          <div class="time">May 2024 – Aug 2024</div>
+          <ul>
+            <li>Contributed to building and optimizing CI/CD pipelines using Azure DevOps and GitHub Actions, assisting in reducing deployment time and enhancing team efficiency.</li>
+            <li>Gained hands-on experience with Infrastructure as Code (IaC), provisioning cloud resources with Terraform and deploying containerized applications with Docker and Kubernetes.</li>
+            <li>Supported system reliability by implementing monitoring dashboards and assisting with incident response, leveraging tools like Prometheus and Grafana.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="dot"></div>
+        <div class="card">
+          <h3>Linux Administrator — <span class="muted">Meltag Marketing, Hyderabad, India</span></h3>
+          <div class="time">Feb 2023 – Dec 2023</div>
+          <ul>
+            <li>Managed and maintained critical Ubuntu servers on AWS, ensuring high availability and performance for Python applications and databases.</li>
+            <li>Automated routine system tasks and security checks using Python and Bash scripting, resulting in an estimated saving of 5 hours per week.</li>
+            <li>Developed and implemented robust backup and disaster recovery plans to ensure data integrity and business continuity.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Skills & Tools section with correct logos and tooltips -->
+  <section id="skills" class="section skills">
+    <h2>Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="skill" data-skill="AWS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"></div>
+      <div class="skill" data-skill="Azure"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"></div>
+      <div class="skill" data-skill="GCP"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP"></div>
+      <div class="skill" data-skill="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+      <div class="skill" data-skill="SQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"></div>
+      <div class="skill" data-skill="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"></div>
+      <div class="skill" data-skill="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"></div>
+      <div class="skill" data-skill="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
+      <div class="skill" data-skill="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+      <div class="skill" data-skill="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"></div>
+      <div class="skill" data-skill="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></div>
+      <div class="skill" data-skill="Azure DevOps"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" alt="Azure DevOps"></div>
+      <div class="skill" data-skill="GitHub Actions"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions"></div>
+      <div class="skill" data-skill="Jenkins"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"></div>
+      <div class="skill" data-skill="Terraform"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"></div>
+      <div class="skill" data-skill="Ansible"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible"></div>
+      <div class="skill" data-skill="Docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
+      <div class="skill" data-skill="Kubernetes"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
+      <div class="skill" data-skill="Helm"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/helm/helm-original.svg" alt="Helm"></div>
+      <div class="skill" data-skill="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"></div>
+      <div class="skill" data-skill="Prometheus"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus"></div>
+      <div class="skill" data-skill="Grafana"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana"></div>
+      <div class="skill" data-skill="Github"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github"></div>
+      <div class="skill" data-skill="Nginx"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx"></div>
+    </div>
+  </section>
+
+  <!-- 3. Projects section images -->
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <article class="project">
+        <img src="assets/smart-container.jpg" alt="Smart Container project" class="project-img"/>
+        <div class="content">
+          <h3>Smart Container — AI-Driven Inventory</h3>
+          <p>Built a real-time inventory system with IoT sensors and a cloud backend delivering ~98% precision and sub-second latency, complete with low-stock alerts.</p>
+          <span class="tags">IoT • Flask APIs • Cloud • Mobile UI</span>
+        </div>
+      </article>
+      <article class="project">
+        <img src="assets/library-management-hub.avif" alt="Library Management Hub project" class="project-img"/>
+        <div class="content">
+          <h3>Library Management Hub</h3>
+          <p>Full‑stack app with secure auth, modular REST APIs, and role‑based access control for streamlined library operations and data integrity.</p>
+          <span class="tags">Flask • MySQL • RBAC</span>
+        </div>
+      </article>
+      <article class="project">
+        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1200&auto=format&fit=crop" alt="Recommendation Engine project" class="project-img"/>
+        <div class="content">
+          <h3>AI Recommendation Engine</h3>
+          <p>Delivered personalized learning resources by combining feature engineering with vector-based search for faster, more accurate retrieval.</p>
+          <span class="tags">TensorFlow • Scikit‑learn • PostgreSQL</span>
+        </div>
+      </article>
+      <article class="project">
+        <img src="assets/fire-smoke-detection.png" alt="Fire Smoke Detection project" class="project-img"/>
+        <div class="content">
+          <h3>Fire/Smoke Detection</h3>
+          <p>
+            Built a real-time CV pipeline using deep nets (ResNet-50 + Bi-FPN), tuned with IoU and cross-entropy to boost detection accuracy for safety systems. Provides immediate alerts to enhance safety and enable instant threat identification.
+          </p>
+          <span class="tags">Computer Vision • Deep Learning</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. Certifications section with local AWS badge -->
+  <section id="certs" class="section certs">
+    <h2>Certifications & Exams</h2>
+    <div class="cert-grid">
+      <a class="cert" target="_blank" rel="noopener" href="https://www.credly.com/badges/fe86e3f4-8e27-4b7c-85e1-3042a9d5955a/linked_in_profile">
+        <img src="assets/aws-ccp.png" alt="AWS Certified Cloud Practitioner" class="cert-badge"/>
+        <span>AWS Certified Cloud Practitioner</span>
+      </a>
+      <a class="cert" target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/users/sudhamshrama-6693/credentials/3c660ad35b0b5559?ref=https%3A%2F%2Fwww.linkedin.com%2F">
+        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Azure Administrator" class="cert-badge"/>
+        <span>Microsoft Azure Administrator (AZ‑104)</span>
+      </a>
+      <a class="cert" target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/users/sudhamshrama-6693/credentials/515a4137d3209ebd?ref=https%3A%2F%2Fwww.linkedin.com%2F">
+        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.svg" alt="Azure DevOps" class="cert-badge"/>
+        <span>Designing and Implementing Microsoft DevOps Solutions (AZ‑400)</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 5. Resume section with working download link, tip removed -->
+  <section id="resume" class="section resume">
+    <h2>Resume</h2>
+    <p>Prefer a one‑page summary? Grab my resume below.</p>
+    <a class="btn primary" target="_blank" rel="noopener" href="resume/Sudhamsh_Resume.pdf" download>Download Resume</a>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <a href="mailto:ramasudhamsh@gmail.com" class="contact-card">
+        <i class="fa-regular fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>ramasudhamsh@gmail.com</p>
+        </div>
+      </a>
+      <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/sudhamsh-r" class="contact-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <div>
+          <h4>LinkedIn</h4>
+          <p>/in/sudhamsh-r</p>
+        </div>
+      </a>
+      <a target="_blank" rel="noopener" href="https://github.com/sudhamshrama" class="contact-card">
+        <i class="fa-brands fa-github"></i>
+        <div>
+          <h4>GitHub</h4>
+          <p>@sudhamshrama</p>
+        </div>
+      </a>
+      <!-- Add phone card -->
+      <a href="tel:+19452783783" class="contact-card">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>+1 945 278 3783</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Sudhamsh Rama — Built with love and coffee.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

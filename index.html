@@ -9,9 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Removed rocket emoji from favicon -->
   <link rel="icon" href="">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <canvas id="stars"></canvas>
@@ -20,12 +19,10 @@
   <div class="blob blob-3"></div>
 
   <header class="nav">
-    <!-- Make logo clickable to home -->
     <a href="#home" class="logo">SR</a>
     <nav>
       <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
       <a href="#about"><i class="fa-regular fa-user"></i> About</a>
-      <!-- Removed Experience and Skills links -->
       <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
       <a href="#certs"><i class="fa-solid fa-certificate"></i> Certifications</a>
       <a href="#resume"><i class="fa-regular fa-file-lines"></i> Resume</a>
@@ -33,7 +30,7 @@
     </nav>
   </header>
 
-  <!-- 1. Main display picture on front page -->
+  <!-- Hero Section -->
   <section id="home" class="section hero">
     <div class="hero-text">
       <p class="muted hi-there">Hi There!</p>
@@ -43,12 +40,10 @@
           data-roles="DevOps Engineer|Software Engineer|Cloud Engineer|AI/ML Engineer"></span>
         <span class="cursor">|</span>
       </h2>
-
       <div class="cta">
         <a class="btn primary" href="#contact">Hire Me</a>
         <a class="btn ghost" href="#projects">View Projects</a>
       </div>
-
       <div class="socials">
         <a target="_blank" rel="noopener" href="https://github.com/sudhamshrama" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/sudhamsh-r" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
@@ -63,11 +58,10 @@
     </div>
   </section>
 
-  <!-- 2. Professional Status card bullets aligned, no dots -->
+  <!-- Intro Section -->
   <section class="section intro-strip">
     <div class="intro-card">
       <h3>Professional Status</h3>
-      <!-- 2. One line gap before bullets -->
       <div style="height: 1em;"></div>
       <ul class="status-list">
         <li>F-1 Visa Holder</li>
@@ -88,7 +82,7 @@
     </div>
   </section>
 
-  <!-- 4. About Me section: one paragraph, quote indentation, no colon in Beyond Code I love -->
+  <!-- About Section -->
   <section id="about" class="section about">
     <div class="about-text">
       <h2>About Me</h2>
@@ -99,7 +93,6 @@
         and <strong>Linux Administrator</strong>, building automation, deployments, and secure systems across
         AWS and Azure. I love building reliable systems that are not just functional, but also easy to manage and maintain.
       </p>
-      <!-- 3. Updated quote -->
       <div class="quote">
         "We are what we repeatedly do. Excellence, then, is not an act, but a habit. " - Aristotle
       </div>
@@ -116,7 +109,7 @@
     </div>
   </section>
 
-  <!-- 6. Update Professional Experience section -->
+  <!-- Experience Section -->
   <section id="experience" class="section experience">
     <h2>Professional Experience</h2>
     <div class="timeline">
@@ -147,7 +140,7 @@
     </div>
   </section>
 
-  <!-- 7. Skills & Tools section with correct logos and tooltips -->
+  <!-- Skills Section -->
   <section id="skills" class="section skills">
     <h2>Skills & Tools</h2>
     <div class="skills-grid">
@@ -178,7 +171,7 @@
     </div>
   </section>
 
-  <!-- 3. Projects section images -->
+  <!-- Projects Section -->
   <section id="projects" class="section projects">
     <h2>Projects</h2>
     <div class="project-grid">
@@ -219,7 +212,7 @@
     </div>
   </section>
 
-  <!-- 4. Certifications section with local AWS badge -->
+  <!-- Certifications Section -->
   <section id="certs" class="section certs">
     <h2>Certifications & Exams</h2>
     <div class="cert-grid">
@@ -238,13 +231,14 @@
     </div>
   </section>
 
-  <!-- 5. Resume section with working download link, tip removed -->
+  <!-- Resume Section -->
   <section id="resume" class="section resume">
     <h2>Resume</h2>
     <p>Prefer a one‑page summary? Grab my resume below.</p>
     <a class="btn primary" target="_blank" rel="noopener" href="resume/Sudhamsh_Resume.pdf" download>Download Resume</a>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="section contact">
     <h2>Contact</h2>
     <div class="contact-grid">
@@ -269,7 +263,6 @@
           <p>@sudhamshrama</p>
         </div>
       </a>
-      <!-- Add phone card -->
       <a href="tel:+19452783783" class="contact-card">
         <i class="fa-solid fa-phone"></i>
         <div>

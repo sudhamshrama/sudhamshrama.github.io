@@ -15,6 +15,9 @@ AWS | Azure | Python | CI/CD (Jenkins, GitHub Actions) | Terraform | Ansible | D
 Featured Projects :
 
 Smart Container — AI-Driven Inventory
+
 Library Management Hub
+
 AI Recommendation Engine
+
 Fire/Smoke Detection

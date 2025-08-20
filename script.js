@@ -1,4 +1,4 @@
-// ===== Stars Canvas =====
+// Stars Canvas
 const canvas = document.getElementById('stars');
 const ctx = canvas.getContext('2d');
 let w, h, stars;
@@ -29,7 +29,7 @@ function draw() {
 window.addEventListener('resize', resize);
 resize(); draw();
 
-// ===== Typed Roles =====
+// Typed Roles Animation
 const rolesEl = document.getElementById('typed-roles');
 const cursorEl = document.querySelector('.cursor');
 const roles = rolesEl.dataset.roles.split('|');
@@ -51,5 +51,5 @@ typeLoop();
 // Blink cursor
 setInterval(()=> cursorEl.style.opacity = cursorEl.style.opacity === '0' ? '1' : '0', 500);
 
-// ===== Footer Year =====
+// Footer Year
 document.getElementById('year').textContent = new Date().getFullYear();

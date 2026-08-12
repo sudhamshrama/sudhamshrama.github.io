@@ -1,298 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sudhamsh Rama | Portfolio</title>
-  <meta name="description" content="Sudhamsh Rama — DevOps Engineer, Software Engineer, Cloud Engineer, AI/ML Engineer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sudhamsh Rama — DevOps Engineer</title>
+<meta name="description" content="Sudhamsh Rama — DevOps Engineer specializing in Azure and AWS, Kubernetes, infrastructure as code, GitOps delivery, and site reliability."/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://sudhamshrama.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sudhamshrama.github.io/">
+<meta property="og:title" content="Sudhamsh Rama — DevOps Engineer">
+<meta property="og:description" content="DevOps Engineer with over four years of experience across Azure and AWS in regulated healthcare, banking, and telecommunications. Kubernetes, infrastructure as code, GitOps, and site reliability.">
+<meta property="og:image" content="https://sudhamshrama.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sudhamsh Rama — DevOps Engineer">
+<meta name="twitter:description" content="DevOps Engineer — Azure &amp; AWS, Kubernetes, Infrastructure as Code, Site Reliability.">
+<meta name="twitter:image" content="https://sudhamshrama.github.io/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="stars"></canvas>
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
 
-  <header class="nav">
-    <a href="#home" class="logo">SR</a>
-    <nav>
-      <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
-      <a href="#about"><i class="fa-regular fa-user"></i> About</a>
-      <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
-      <a href="#certs"><i class="fa-solid fa-certificate"></i> Certifications</a>
-      <a href="#resume"><i class="fa-regular fa-file-lines"></i> Resume</a>
-      <a href="#contact"><i class="fa-regular fa-paper-plane"></i> Contact</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">SUDHAMSH<span>.</span>RAMA</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="section hero">
-    <div class="hero-text">
-      <p class="muted hi-there">Hi There!</p>
-      <h1>I'M <span class="accent">SUDHAMSH RAMA</span></h1>
-      <h2 class="typed">
-        <span id="typed-roles"
-          data-roles="DevOps Engineer|Software Engineer|Cloud Engineer|AI/ML Engineer"></span>
-        <span class="cursor">|</span>
-      </h2>
-      <div class="cta">
-        <a class="btn primary" href="#contact">Hire Me</a>
-        <a class="btn ghost" href="#projects">View Projects</a>
-      </div>
-      <div class="socials">
-        <a target="_blank" rel="noopener" href="https://github.com/sudhamshrama" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/sudhamshrama01/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:sudhamshrama03@gmail.com" aria-label="Email" class="mail-tooltip">
-          <i class="fa-regular fa-envelope"></i>
-        </a>
-        <a href="tel:+19452783783" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="assets/main-picture.avif" alt="Sudhamsh Rama main display" class="main-display-img"/>
-    </div>
-  </section>
-
-  <!-- Intro Section -->
-  <section class="section intro-strip">
-    <div class="intro-card">
-      <h3>Professional Status</h3>
-      <div style="height: 1em;"></div>
-      <ul class="status-list">
-        <li>F-1 Visa Holder</li>
-        <li>Legally authorised to work in USA</li>
-        <li>Open to relocation</li>
-      </ul>
-    </div>
-    <div class="intro-card">
-      <h3>What I Do</h3>
-      <p>
-        DevOps, Cloud, and Software Engineering with a pinch of AI/ML. I turn ideas into maintainable, monitored,
-        production-grade services.
-      </p>
-    </div>
-    <div class="intro-card">
-      <h3>Where I Am</h3>
-      <p>Springfield, Illinois</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hey, I am <strong>Sudhamsh Rama</strong> from Dallas, Texas. I am a graduate in
-        <strong>Master’s in Computer Science</strong> at <strong>UT Arlington</strong> with a focus on
-        DevOps, Cloud, and AI-driven engineering. I’ve worked as an <strong>Associate DevOps Engineer</strong>
-       , building automation, deployments, and secure systems across
-        AWS and Azure. I love building reliable systems that are not just functional, but also easy to manage and maintain.
-      </p>
-      <div class="quote">
-        "We are what we repeatedly do. Excellence, then, is not an act, but a habit. " - Aristotle
-      </div>
-      <h3>Beyond Code I love</h3>
-      <ul class="hobbies">
-        <li>Billiards</li>
-        <li>Travel</li>
-        <li>Photography</li>
-        <li>Gym</li>
-      </ul>
-    </div>
-    <div class="about-image">
-      <img src="assets/about-me.jpeg" alt="Sudhamsh Rama About Me" class="about-me-img"/>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section experience">
-    <h2>Professional Experience</h2>
-    <div class="timeline">
-
-<div class="timeline-item">
-<div class="dot"></div>
-<div class="card">
-<h3>Associate DevOps Engineer — <span class="muted">Pristine Embed Technologies Inc, Charlotte, NC</span></h3>
-<div class="time">May 2025 – Present</div>
-<ul>
-<li>Designed end-to-end CI/CD pipelines using Azure DevOps and GitHub Actions with automated build, test, and deployment.</li>
-<li>Deployed and managed containerized microservices on Kubernetes clusters with auto-scaling policies maintaining 99.9% uptime, and implemented monitoring dashboards in Prometheus and Grafana.</li>
-<li>Provisioned and optimized infrastructure-as-code using Terraform modules, reducing provisioning time by 40%.</li>
-<li>Conducted code reviews and implemented security improvements, including Docker and Kubernetes best practices for system reliability and scalability across development environments.</li>
-</ul>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="dot"></div>
-<div class="card">
-<h3>DevOps Engineer Intern — <span class="muted">Pristine Embed Technologies Inc, Charlotte, NC</span></h3>
-<div class="time">Jan 2025 – Apr 2025</div>
-<ul>
-<li>Migrated Jenkins pipelines to GitHub Actions and developed Python automation scripts for AWS resource tagging, cost reporting, and CI/CD optimization.</li>
-<li>Collaborated with infrastructure teams to deploy and manage containerized microservices on Kubernetes, implemented performance optimization and automated scaling policies, reducing infrastructure costs by 30%.</li>
-</ul>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="dot"></div>
-<div class="card">
-<h3>DevOps Engineer — <span class="muted">Newgen Software Technologies Inc, Chennai, India</span></h3>
-<div class="time">Feb 2021 – Nov 2023</div>
-<ul>
-<li>Managed production Ubuntu Linux infrastructure on AWS EC2 maintaining 99.9% uptime for PostgreSQL databases, and implemented centralized monitoring using AWS CloudWatch and incident response procedures.</li>
-<li>Automated operational tasks including patch management, bug aggregation with CloudWatch, and incident response procedures.</li>
-<li>Performed root cause analysis on production issues through CloudWatch and developed monitoring dashboards to visualize system health, enabling proactive issue detection and resolution.</li>
-</ul>
-</div>
-</div>
-
-</div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
-    <h2>Skills & Tools</h2>
-    <div class="skills-grid">
-      <div class="skill" data-skill="AWS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"></div>
-      <div class="skill" data-skill="Azure"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"></div>
-      <div class="skill" data-skill="GCP"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP"></div>
-      <div class="skill" data-skill="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
-      <div class="skill" data-skill="SQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"></div>
-      <div class="skill" data-skill="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"></div>
-      <div class="skill" data-skill="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"></div>
-      <div class="skill" data-skill="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
-      <div class="skill" data-skill="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
-      <div class="skill" data-skill="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"></div>
-      <div class="skill" data-skill="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></div>
-      <div class="skill" data-skill="Azure DevOps"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" alt="Azure DevOps"></div>
-      <div class="skill" data-skill="GitHub Actions"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions"></div>
-      <div class="skill" data-skill="Jenkins"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"></div>
-      <div class="skill" data-skill="Terraform"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"></div>
-      <div class="skill" data-skill="Ansible"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible"></div>
-      <div class="skill" data-skill="Docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
-      <div class="skill" data-skill="Kubernetes"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
-      <div class="skill" data-skill="Helm"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/helm/helm-original.svg" alt="Helm"></div>
-      <div class="skill" data-skill="PostgreSQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"></div>
-      <div class="skill" data-skill="Prometheus"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus"></div>
-      <div class="skill" data-skill="Grafana"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana"></div>
-      <div class="skill" data-skill="Github"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github"></div>
-      <div class="skill" data-skill="Nginx"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx"></div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <article class="project">
-        <img src="assets/smart-container.jpg" alt="Smart Container project" class="project-img"/>
-        <div class="content">
-          <h3>Smart Container — AI-Driven Inventory</h3>
-          <p>Built a real-time inventory system with IoT sensors and a cloud backend delivering ~98% precision and sub-second latency, complete with low-stock alerts.</p>
-          <span class="tags">IoT • Flask APIs • Cloud • Mobile UI</span>
-        </div>
-      </article>
-      <article class="project">
-        <img src="assets/library-management-hub.avif" alt="Library Management Hub project" class="project-img"/>
-        <div class="content">
-          <h3>Library Management Hub</h3>
-          <p>Full‑stack app with secure auth, modular REST APIs, and role‑based access control for streamlined library operations and data integrity.</p>
-          <span class="tags">Flask • MySQL • RBAC</span>
-        </div>
-      </article>
-      <article class="project">
-        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1200&auto=format&fit=crop" alt="Recommendation Engine project" class="project-img"/>
-        <div class="content">
-          <h3>AI Recommendation Engine</h3>
-          <p>Delivered personalized learning resources by combining feature engineering with vector-based search for faster, more accurate retrieval.</p>
-          <span class="tags">TensorFlow • Scikit‑learn • PostgreSQL</span>
-        </div>
-      </article>
-      <article class="project">
-        <img src="assets/fire-smoke-detection.png" alt="Fire Smoke Detection project" class="project-img"/>
-        <div class="content">
-          <h3>Fire/Smoke Detection</h3>
-          <p>
-            Built a real-time CV pipeline using deep nets (ResNet-50 + Bi-FPN), tuned with IoU and cross-entropy to boost detection accuracy for safety systems. Provides immediate alerts to enhance safety and enable instant threat identification.
-          </p>
-          <span class="tags">Computer Vision • Deep Learning</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certs" class="section certs">
-    <h2>Certifications & Exams</h2>
-    <div class="cert-grid">
-      <a class="cert" target="_blank" rel="noopener" href="https://www.credly.com/badges/fe86e3f4-8e27-4b7c-85e1-3042a9d5955a/linked_in_profile">
-        <img src="assets/aws-ccp.png" alt="AWS Certified Cloud Practitioner" class="cert-badge"/>
-        <span>AWS Certified Cloud Practitioner</span>
-      </a>
-      <a class="cert" target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/users/sudhamshrama-6693/credentials/3c660ad35b0b5559?ref=https%3A%2F%2Fwww.linkedin.com%2F">
-        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Azure Administrator" class="cert-badge"/>
-        <span>Microsoft Azure Administrator (AZ‑104)</span>
-      </a>
-      <a class="cert" target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/users/sudhamshrama-6693/credentials/515a4137d3209ebd?ref=https%3A%2F%2Fwww.linkedin.com%2F">
-        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.svg" alt="Azure DevOps" class="cert-badge"/>
-        <span>Designing and Implementing Microsoft DevOps Solutions (AZ‑400)</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume" class="section resume">
-    <h2>Resume</h2>
-    <p>Prefer a one‑page summary? Grab my resume below.</p>
-  <a class="btn primary" href="resume/Sudhamsh_DevOps_resume.docx" download>Download Resume</a>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <div class="contact-grid">
-      <a href="mailto:sudhamshrama03@gmail.com" class="contact-card" aria-label="Email Sudhamsh" role="button" tabindex="0" onclick="window.location.href='mailto:sudhamshrama03@gmail.com'">
-        <i class="fa-regular fa-envelope"></i>
-        <div>
-          <h4>Email</h4>
-          <p>sudhamshrama03@gmail.com</p>
-        </div>
-      </a>
-      <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/sudhamshrama01/" class="contact-card">
-  <i class="fa-brands fa-linkedin"></i>
-  <div>
-    <h4>LinkedIn</h4>
-    <p>sudhamshrama01</p>
   </div>
-</a>
-      <a target="_blank" rel="noopener" href="https://github.com/sudhamshrama" class="contact-card">
-        <i class="fa-brands fa-github"></i>
-        <div>
-          <h4>GitHub</h4>
-          <p>@sudhamshrama</p>
-        </div>
-      </a>
-      <a href="tel:+19452783783" class="contact-card">
-        <i class="fa-solid fa-phone"></i>
-        <div>
-          <h4>Phone</h4>
-          <p>+1 945 278 3783</p>
-        </div>
-      </a>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker fade fade-1">DevOps Engineer</p>
+    <h1 class="fade fade-2">Sudhamsh Rama</h1>
+    <p class="sub fade fade-3" aria-label="Azure and AWS, Kubernetes, Infrastructure as Code, Site Reliability">
+      <span class="ghost" aria-hidden="true">Azure &amp; AWS · Kubernetes · Infrastructure as Code · Site Reliability</span>
+      <span class="typed" id="typed" aria-hidden="true"></span>
+    </p>
+    <p class="pitch fade fade-4">DevOps Engineer with over four years of experience across Azure and
+      AWS in regulated healthcare, banking, and telecommunications environments. Specialized in
+      infrastructure as code, Kubernetes operations, GitOps delivery, and SLO-based observability,
+      with production on-call responsibility in a HIPAA-regulated environment.</p>
+    <div class="cta fade fade-5">
+      <a class="btn btn-primary" href="resume/Sudhamsh_Rama_DevOps_Resume.pdf" target="_blank">Download Résumé</a>
+      <a class="btn btn-ghost" href="#experience">View Experience</a>
+      <div class="socials">
+        <a href="https://github.com/sudhamshrama" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a>
+        <a href="https://www.linkedin.com/in/sudhamshrama01/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5M3 9h4v12H3zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.6 4.76 6V21h-4v-5.5c0-1.3-.02-3-1.85-3-1.85 0-2.13 1.44-2.13 2.9V21h-4z"/></svg></a>
+        <a href="mailto:sudhamshrama03@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 6.5L21 6"/></svg></a>
+        <a class="phone" id="phone" href="tel:+19452783783" aria-label="Phone: +1 945-278-3783"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"/></svg><span class="phone-pop" id="phone-pop">+1 945-278-3783</span></a>
+      </div>
     </div>
-  </section>
+    <div class="avail fade fade-6"><span class="pulse"></span> Available for DevOps, SRE, and Platform Engineering roles</div>
+  </div>
+</section>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> Sudhamsh Rama — Built with love and coffee.</span>
-  </footer>
+<div class="wrap"><div class="proof rv">
+  <div><div class="n"><em>4+</em> Years</div><div class="l">Cloud platform engineering across Azure and AWS</div></div>
+  <div><div class="n">AZ-400</div><div class="l">Microsoft Certified: DevOps Engineer Expert</div></div>
+  <div><div class="n">HIPAA / SOX</div><div class="l">Regulated change control and audit evidence</div></div>
+  <div><div class="n">On-Call</div><div class="l">Production incident response and postmortems</div></div>
+</div></div>
 
-  <script src="script.js"></script>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <p class="eyebrow"><b>01</b></p>
+    <h2>Professional Experience</h2>
+    <div style="height:30px"></div>
+
+    <div class="job rv">
+      <div class="when">May 2025 — Present<b>Remote / US</b></div>
+      <div>
+        <h3>Molina Healthcare</h3>
+        <p class="role">DevOps Engineer · Azure Platform Team</p>
+        <ul>
+          <li>Maintain the Terraform and Bicep codebase covering AKS, hub-and-spoke networking, and Key
+            Vault. Refactored a manually provisioned environment into reusable modules with remote
+            state and a Checkov policy gate, reducing environment provisioning from a multi-day
+            request queue to a same-day task.</li>
+          <li>Operate AKS clusters supporting member-facing and claims workloads across development,
+            staging, and production, including hybrid connectivity to on-premises Active Directory and
+            DNS. Resolved a capacity-driven CrashLoopBackOff incident by retuning HPA thresholds,
+            resource requests, and cluster autoscaler configuration, restoring peak latency to
+            baseline.</li>
+          <li>Migrated application delivery to a GitOps model using Argo CD and Helm on top of Azure
+            DevOps build pipelines, replacing scheduled batch releases with on-demand deployment and
+            eliminating the weekly release coordination meeting.</li>
+          <li>Implemented the observability platform across Azure Monitor, Log Analytics, Prometheus,
+            Grafana, OpenTelemetry, and Loki. Defined SLIs and error budgets for tier-1 services and
+            decommissioned alerts that had not been actioned in six months.</li>
+          <li>Integrated Trivy, SonarQube, and Checkov gates into Azure DevOps pipelines, with
+            OPA/Gatekeeper and Azure Policy assignments rejecting privileged containers and unsigned
+            images at admission. HIPAA change-control evidence is now generated by the pipeline rather
+            than compiled manually each quarter.</li>
+          <li>Participate in a shared on-call rotation, authoring runbooks for recurring alerts and
+            leading blameless postmortems that reduced time to resolution on deployment-related
+            incidents.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job rv">
+      <div class="when">Jan 2025 — Apr 2025<b>Remote / US</b></div>
+      <div>
+        <h3>Bank of America</h3>
+        <p class="role">DevOps Engineer · AWS Migration Engagement</p>
+        <ul>
+          <li>Rebuilt legacy Jenkins freestyle jobs as a shared-library pipeline, consolidating
+            duplicated Groovy into a single maintained implementation and reducing average build
+            times.</li>
+          <li>Developed Terraform modules for EKS managed node groups, IRSA roles, and ALB ingress,
+            enabling application teams to request infrastructure through pull requests rather than
+            service tickets.</li>
+          <li>Deployed containerized services to Amazon EKS using Helm with blue-green cutover and
+            automated rollback on failed health checks, supported by CloudWatch and Grafana dashboards
+            aligned to SOX change-control evidence requirements.</li>
+          <li>Replaced wildcard IAM policies with scoped roles and migrated static access keys into
+            AWS Secrets Manager with scheduled rotation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job rv">
+      <div class="when">Feb 2021 — Nov 2023<b>Hyderabad, India</b></div>
+      <div>
+        <h3>Verizon</h3>
+        <p class="role">Software Engineer · Platform &amp; Release Automation</p>
+        <ul>
+          <li>Progressed from application development into infrastructure over two years, beginning
+            with release automation in Python and Bash and subsequently owning the team's Jenkins
+            pipelines and container builds.</li>
+          <li>Containerized legacy services using Docker multi-stage builds, separating build and
+            runtime layers so published images excluded compilers and build caches, and standardizing
+            local development environments across the team.</li>
+          <li>Built build-validation pipelines with automated unit and integration gates that
+            identified failures before release to QA.</li>
+          <li>Delivered centralized logging with the ELK stack and Grafana dashboards adopted as the
+            primary reference during incidents, and reduced the runtime of a high-usage reporting
+            query by resolving missing indexes and an N+1 access pattern.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow"><b>02</b></p>
+    <h2>Technical Skills</h2>
+    <div style="height:30px"></div>
+
+    <div class="skillrow rv"><div class="k">Azure</div><div class="v">
+      <span class="chip">AKS</span><span class="chip">Azure DevOps</span><span class="chip">Container Registry</span>
+      <span class="chip">Hub-and-Spoke VNets</span><span class="chip">Application Gateway</span>
+      <span class="chip">Key Vault</span><span class="chip">Azure Monitor</span>
+      <span class="chip">Log Analytics / KQL</span><span class="chip">Application Insights</span>
+      <span class="chip">Entra ID</span><span class="chip">Managed Identity</span>
+      <span class="chip">Azure Policy</span><span class="chip">Defender for Cloud</span>
+      <span class="chip">Landing Zones</span><span class="chip">Bicep / ARM</span></div></div>
+
+    <div class="skillrow rv"><div class="k">AWS</div><div class="v">
+      <span class="chip">EKS</span><span class="chip">EC2</span><span class="chip">S3</span>
+      <span class="chip">VPC</span><span class="chip">IAM / IRSA</span><span class="chip">Lambda</span>
+      <span class="chip">RDS</span><span class="chip">Route 53</span><span class="chip">ALB / NLB</span>
+      <span class="chip">CloudWatch</span><span class="chip">Secrets Manager</span>
+      <span class="chip">KMS</span><span class="chip">CloudFormation</span></div></div>
+
+    <div class="skillrow rv"><div class="k">Containers &amp; Orchestration</div><div class="v">
+      <span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">Helm</span>
+      <span class="chip">Kustomize</span><span class="chip">OpenShift</span>
+      <span class="chip">ingress-nginx</span><span class="chip">HPA</span><span class="chip">KEDA</span>
+      <span class="chip">Cluster Autoscaler</span><span class="chip">Istio</span>
+      <span class="chip">Admission Control</span><span class="chip">StatefulSets</span></div></div>
+
+    <div class="skillrow rv"><div class="k">Infrastructure as Code</div><div class="v">
+      <span class="chip">Terraform</span><span class="chip">Bicep / ARM</span>
+      <span class="chip">Remote State &amp; Workspaces</span><span class="chip">Module Design</span>
+      <span class="chip">Ansible</span><span class="chip">CloudFormation</span>
+      <span class="chip">Checkov</span><span class="chip">tfsec</span><span class="chip">Drift Detection</span></div></div>
+
+    <div class="skillrow rv"><div class="k">CI/CD &amp; GitOps</div><div class="v">
+      <span class="chip">Azure DevOps Pipelines</span><span class="chip">GitHub Actions</span>
+      <span class="chip">Argo CD</span><span class="chip">Jenkins Shared Libraries</span>
+      <span class="chip">GitLab CI</span><span class="chip">Nexus</span><span class="chip">Artifactory</span>
+      <span class="chip">Maven</span><span class="chip">Trunk-Based Development</span>
+      <span class="chip">Blue-Green &amp; Canary</span><span class="chip">Automated Rollback</span></div></div>
+
+    <div class="skillrow rv"><div class="k">Observability &amp; Reliability</div><div class="v">
+      <span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Loki</span>
+      <span class="chip">OpenTelemetry</span><span class="chip">Datadog</span><span class="chip">ELK</span>
+      <span class="chip">Splunk</span><span class="chip">Alertmanager</span><span class="chip">PagerDuty</span>
+      <span class="chip">SLI / SLO Definition</span><span class="chip">Error Budgets</span>
+      <span class="chip">Incident Response</span><span class="chip">Blameless Postmortems</span></div></div>
+
+    <div class="skillrow rv"><div class="k">Security &amp; Compliance</div><div class="v">
+      <span class="chip">OPA / Gatekeeper</span><span class="chip">Trivy</span><span class="chip">Snyk</span>
+      <span class="chip">SonarQube</span><span class="chip">Least-Privilege RBAC &amp; IAM</span>
+      <span class="chip">Secrets Rotation</span><span class="chip">Image Scanning &amp; Signing</span>
+      <span class="chip">HIPAA</span><span class="chip">SOX-Aligned Change Control</span></div></div>
+
+    <div class="skillrow rv"><div class="k">Languages &amp; Systems</div><div class="v">
+      <span class="chip">Python</span><span class="chip">Bash</span><span class="chip">KQL</span>
+      <span class="chip">YAML</span><span class="chip">SQL</span><span class="chip">Go</span>
+      <span class="chip">PowerShell</span><span class="chip">Linux — RHEL / Ubuntu</span>
+      <span class="chip">Git</span><span class="chip">TCP/IP · DNS · TLS</span></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow"><b>03</b></p>
+    <h2>Selected Projects</h2>
+    <p class="lead">Public repositories demonstrating end-to-end delivery, supply-chain security
+      gating, and GitOps operations.</p>
+
+    <div class="proj-grid rv">
+      <article class="proj">
+        <p class="tag">Delivery Pipeline</p>
+        <h3>Production Delivery Pipeline</h3>
+        <p>CI/CD built on GitHub Actions with multi-architecture image builds, SBOM generation, signed
+          provenance, and a Trivy vulnerability gate that blocks releases on HIGH and CRITICAL
+          findings. Instrumented with Prometheus, Loki, and OpenTelemetry tracing, and provisioned
+          through Terraform modules applied against a live Azure subscription.</p>
+        <div class="chips">
+          <span class="chip">GitHub Actions</span><span class="chip">Trivy</span>
+          <span class="chip">Terraform</span><span class="chip">Prometheus</span>
+          <span class="chip">Loki</span><span class="chip">Jaeger</span><span class="chip">Azure</span>
+        </div>
+        <a class="link" href="https://github.com/sudhamshrama/url-shortener" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="proj">
+        <p class="tag">GitOps</p>
+        <h3>GitOps Configuration Repository</h3>
+        <p>Argo CD managing Kustomize overlays for development, staging, and production, with
+          automated synchronization in lower environments and approval-gated promotion in production.
+          Uses Sealed Secrets for encrypted credentials, sync waves for ordered rollout, and
+          pull-request-based deployments pinned to a single image digest.</p>
+        <div class="chips">
+          <span class="chip">Argo CD</span><span class="chip">Kustomize</span>
+          <span class="chip">Sealed Secrets</span><span class="chip">Kubernetes</span>
+          <span class="chip">Helm</span>
+        </div>
+        <a class="link" href="https://github.com/sudhamshrama/url-shortener-config" target="_blank" rel="noopener">View repository →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS + EDUCATION -->
+<section id="certs">
+  <div class="wrap">
+    <p class="eyebrow"><b>04</b></p>
+    <h2>Certifications</h2>
+    <div style="height:30px"></div>
+    <div class="certs rv">
+      <a class="cert" target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/users/sudhamshrama-6693/credentials/515a4137d3209ebd">
+        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.svg" alt="" loading="lazy">
+        <div class="t">DevOps Engineer Expert</div><div class="i">Microsoft · AZ-400</div>
+        <div class="v">Verify credential →</div></a>
+      <a class="cert" target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/users/sudhamshrama-6693/credentials/3c660ad35b0b5559">
+        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="" loading="lazy">
+        <div class="t">Azure Administrator Associate</div><div class="i">Microsoft · AZ-104</div>
+        <div class="v">Verify credential →</div></a>
+      <a class="cert" target="_blank" rel="noopener" href="https://www.credly.com/badges/fe86e3f4-8e27-4b7c-85e1-3042a9d5955a/linked_in_profile">
+        <img src="assets/aws-ccp.png" alt="" loading="lazy">
+        <div class="t">Cloud Practitioner</div><div class="i">AWS · CLF-C02</div>
+        <div class="v">Verify credential →</div></a>
+    </div>
+    <p class="inprog">Currently pursuing: <b>Certified Kubernetes Administrator (CKA)</b> and
+      <b>Azure Solutions Architect Expert (AZ-305)</b>.</p>
+
+    <div style="height:66px"></div>
+    <p class="eyebrow"><b>05</b></p>
+    <h2>Education</h2>
+    <div style="height:24px"></div>
+    <div class="edu rv"><div class="when">Jan 2024 — Dec 2025</div>
+      <div><h3>M.S., Computer Science</h3><p>University of Texas at Arlington</p></div></div>
+    <div class="edu rv"><div class="when">2019 — 2023</div>
+      <div><h3>B.Tech., Computer Science &amp; Engineering</h3><p>Guru Nanak Institutions (JNTUH)</p></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow"><b>06</b></p>
+    <h2>Contact</h2>
+    <p class="lead">I am currently exploring DevOps, Site Reliability, and Platform Engineering
+      opportunities. Please feel free to reach out regarding open roles, referrals, or to discuss
+      how I can contribute to your team.</p>
+    <a class="mailto" href="mailto:sudhamshrama03@gmail.com">sudhamshrama03@gmail.com</a>
+    <div class="cta">
+      <a class="btn btn-primary" href="mailto:sudhamshrama03@gmail.com">Send an Email</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/sudhamshrama01/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+    <div class="meta">
+      <div><b>Location</b>Springfield, Illinois · Open to relocation</div>
+      <div><b>Phone</b><a href="tel:+19452783783">+1 945-278-3783</a></div>
+      <div><b>Work Authorization</b>F-1 · Authorized to work in the United States</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="in">
+  <span>© <span id="yr"></span> Sudhamsh Rama</span>
+  <span>Built with HTML, CSS, and JavaScript · Deployed on GitHub Pages</span>
+</div></footer>
+
+<script src="script.js"></script>
 </body>
 </html>

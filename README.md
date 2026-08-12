@@ -1,23 +1,38 @@
-Sudhamsh Rama - Portfolio
+# sudhamshrama.github.io
 
-This repository contains the code for my personal portfolio, hosted on GitHub Pages.
+Personal portfolio for **Sudhamsh Rama** — DevOps Engineer.
 
-Live Site: https://sudhamshrama.github.io/
+**Live:** https://sudhamshrama.github.io/
 
-About :
+## About
 
-A portfolio showcasing my skills and projects as a Master's student in Computer Science with a focus on DevOps, Cloud, and AI. My professional background is in building automation and secure systems on AWS and Azure.
+A single-page portfolio covering professional experience, technical skills, selected
+projects, certifications, and education. Focus areas are Azure and AWS platform
+engineering, Kubernetes operations, infrastructure as code, GitOps delivery, and site
+reliability.
 
-Tech Stack : 
+## Stack
 
-AWS | Azure | Python | CI/CD (Jenkins, GitHub Actions) | Terraform | Ansible | Docker | Kubernetes
+Plain HTML, CSS, and JavaScript — no framework, no build step. Deployed on GitHub Pages
+directly from `main`.
 
-Featured Projects :
+```
+index.html      markup
+style.css       styles
+script.js       mobile nav, scroll reveal, scrollspy, hero typing effect
+assets/         favicon, social preview image, certification badge
+resume/         résumé (PDF)
+```
 
-Smart Container — AI-Driven Inventory
+## Notes
 
-Library Management Hub
+- Respects `prefers-reduced-motion` — all animation and the typing effect are disabled.
+- Responsive down to 375px with a collapsible mobile navigation.
+- Open Graph and Twitter card metadata for link previews.
 
-AI Recommendation Engine
+## Projects featured
 
-Fire/Smoke Detection
+- [url-shortener](https://github.com/sudhamshrama/url-shortener) — CI/CD, supply-chain
+  security gating, and observability
+- [url-shortener-config](https://github.com/sudhamshrama/url-shortener-config) — GitOps
+  configuration with Argo CD and Kustomize

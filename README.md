@@ -36,3 +36,5 @@ resume/         résumé (PDF)
   security gating, and observability
 - [url-shortener-config](https://github.com/sudhamshrama/url-shortener-config) — GitOps
   configuration with Argo CD and Kustomize
+- [job-radar](https://github.com/sudhamshrama/job-radar) — event-driven AWS pipeline in
+  Terraform, with a [live dashboard](https://d18zgxdvd2esd3.cloudfront.net)

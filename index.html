@@ -228,7 +228,7 @@
     <p class="eyebrow"><b>03</b></p>
     <h2>Selected Projects</h2>
     <p class="lead">Public repositories demonstrating end-to-end delivery, supply-chain security
-      gating, and GitOps operations.</p>
+      gating, GitOps operations, and event-driven infrastructure on AWS.</p>
 
     <div class="proj-grid rv">
       <article class="proj">
@@ -243,7 +243,9 @@
           <span class="chip">Terraform</span><span class="chip">Prometheus</span>
           <span class="chip">Loki</span><span class="chip">Jaeger</span><span class="chip">Azure</span>
         </div>
-        <a class="link" href="https://github.com/sudhamshrama/url-shortener" target="_blank" rel="noopener">View repository →</a>
+        <div class="proj-links">
+          <a class="link" href="https://github.com/sudhamshrama/url-shortener" target="_blank" rel="noopener">View repository →</a>
+        </div>
       </article>
 
       <article class="proj">
@@ -258,7 +260,29 @@
           <span class="chip">Sealed Secrets</span><span class="chip">Kubernetes</span>
           <span class="chip">Helm</span>
         </div>
-        <a class="link" href="https://github.com/sudhamshrama/url-shortener-config" target="_blank" rel="noopener">View repository →</a>
+        <div class="proj-links">
+          <a class="link" href="https://github.com/sudhamshrama/url-shortener-config" target="_blank" rel="noopener">View repository →</a>
+        </div>
+      </article>
+
+      <article class="proj">
+        <p class="tag">Serverless · AWS</p>
+        <h3>Event-Driven Job Pipeline</h3>
+        <p>Scheduled ingestion from 94 public job-board APIs into DynamoDB, defined entirely in
+          Terraform. EventBridge triggers an ingest Lambda every six hours, DynamoDB Streams drive
+          notifications through SNS, and a CloudFront-fronted dashboard reads through API Gateway and
+          a query Lambda. Deployed by GitHub Actions using OIDC federation, so CI holds no long-lived
+          AWS credentials. Runs entirely within the AWS always-free tier at zero cost.</p>
+        <div class="chips">
+          <span class="chip">Terraform</span><span class="chip">AWS Lambda</span>
+          <span class="chip">DynamoDB</span><span class="chip">EventBridge</span>
+          <span class="chip">API Gateway</span><span class="chip">CloudFront</span>
+          <span class="chip">GitHub OIDC</span><span class="chip">Checkov</span>
+        </div>
+        <div class="proj-links">
+          <a class="link" href="https://github.com/sudhamshrama/job-radar" target="_blank" rel="noopener">View repository →</a>
+          <a class="link secondary" href="https://d18zgxdvd2esd3.cloudfront.net" target="_blank" rel="noopener"><span class="live-dot"></span>Live dashboard →</a>
+        </div>
       </article>
     </div>
   </div>

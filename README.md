@@ -32,9 +32,11 @@ resume/         résumé (PDF)
 
 ## Projects featured
 
-- [url-shortener](https://github.com/sudhamshrama/url-shortener) — CI/CD, supply-chain
-  security gating, and observability
-- [url-shortener-config](https://github.com/sudhamshrama/url-shortener-config) — GitOps
-  configuration with Argo CD and Kustomize
+- **Production delivery pipeline** — CI/CD, security gating, observability and GitOps,
+  across [url-shortener](https://github.com/sudhamshrama/url-shortener) (application)
+  and [url-shortener-config](https://github.com/sudhamshrama/url-shortener-config)
+  (Argo CD / Kustomize)
 - [job-radar](https://github.com/sudhamshrama/job-radar) — event-driven AWS pipeline in
   Terraform, with a [live dashboard](https://d18zgxdvd2esd3.cloudfront.net)
+- [secure-supply-chain](https://github.com/sudhamshrama/secure-supply-chain) — SBOM,
+  keyless signing, and Kyverno admission control that rejects unsigned images

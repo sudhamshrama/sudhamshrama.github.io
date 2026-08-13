@@ -228,40 +228,28 @@
     <p class="eyebrow"><b>03</b></p>
     <h2>Selected Projects</h2>
     <p class="lead">Public repositories demonstrating end-to-end delivery, supply-chain security
-      gating, GitOps operations, and event-driven infrastructure on AWS.</p>
+      gating, GitOps delivery, event-driven infrastructure on AWS, and admission-time policy
+      enforcement.</p>
 
     <div class="proj-grid rv">
       <article class="proj">
-        <p class="tag">Delivery Pipeline</p>
+        <p class="tag">Delivery Pipeline · GitOps</p>
         <h3>Production Delivery Pipeline</h3>
-        <p>CI/CD built on GitHub Actions with multi-architecture image builds, SBOM generation, signed
-          provenance, and a Trivy vulnerability gate that blocks releases on HIGH and CRITICAL
-          findings. Instrumented with Prometheus, Loki, and OpenTelemetry tracing, and provisioned
-          through Terraform modules applied against a live Azure subscription.</p>
+        <p>CI/CD built on GitHub Actions with multi-architecture image builds, SBOM generation,
+          signed provenance, and a Trivy vulnerability gate that blocks releases on HIGH and CRITICAL
+          findings. Delivery runs through Argo CD over Kustomize overlays for development, staging,
+          and production, with Sealed Secrets and pull-request deployments pinned to a single image
+          digest. Instrumented with Prometheus, Loki, and OpenTelemetry tracing.</p>
         <div class="chips">
           <span class="chip">GitHub Actions</span><span class="chip">Trivy</span>
-          <span class="chip">Terraform</span><span class="chip">Prometheus</span>
-          <span class="chip">Loki</span><span class="chip">Jaeger</span><span class="chip">Azure</span>
-        </div>
-        <div class="proj-links">
-          <a class="link" href="https://github.com/sudhamshrama/url-shortener" target="_blank" rel="noopener">View repository →</a>
-        </div>
-      </article>
-
-      <article class="proj">
-        <p class="tag">GitOps</p>
-        <h3>GitOps Configuration Repository</h3>
-        <p>Argo CD managing Kustomize overlays for development, staging, and production, with
-          automated synchronization in lower environments and approval-gated promotion in production.
-          Uses Sealed Secrets for encrypted credentials, sync waves for ordered rollout, and
-          pull-request-based deployments pinned to a single image digest.</p>
-        <div class="chips">
           <span class="chip">Argo CD</span><span class="chip">Kustomize</span>
-          <span class="chip">Sealed Secrets</span><span class="chip">Kubernetes</span>
-          <span class="chip">Helm</span>
+          <span class="chip">Kubernetes</span><span class="chip">Terraform</span>
+          <span class="chip">Prometheus</span><span class="chip">Loki</span>
+          <span class="chip">Azure</span>
         </div>
         <div class="proj-links">
-          <a class="link" href="https://github.com/sudhamshrama/url-shortener-config" target="_blank" rel="noopener">View repository →</a>
+          <a class="link" href="https://github.com/sudhamshrama/url-shortener" target="_blank" rel="noopener">Application repo →</a>
+          <a class="link secondary" href="https://github.com/sudhamshrama/url-shortener-config" target="_blank" rel="noopener">GitOps repo →</a>
         </div>
       </article>
 
@@ -284,7 +272,26 @@
           <a class="link secondary" href="https://d18zgxdvd2esd3.cloudfront.net" target="_blank" rel="noopener"><span class="live-dot"></span>Live dashboard →</a>
         </div>
       </article>
-    </div>
+
+      <article class="proj">
+        <p class="tag">Supply-Chain Security</p>
+        <h3>Signed Container Supply Chain</h3>
+        <p>A cluster that refuses to run anything it cannot cryptographically verify, with no private
+          key anywhere in the system. Syft produces a CycloneDX SBOM, a custom gate blocks on
+          <em>fixable</em> findings with exceptions that expire, and cosign signs keylessly through
+          Fulcio and Rekor. Kyverno verifies signature and SBOM attestation at admission in enforce
+          mode, so unsigned images are rejected before they can run. The admission policies carry
+          their own unit tests.</p>
+        <div class="chips">
+          <span class="chip">Cosign</span><span class="chip">Sigstore</span>
+          <span class="chip">Kyverno</span><span class="chip">Syft</span>
+          <span class="chip">Grype</span><span class="chip">SLSA</span>
+          <span class="chip">OPA / Conftest</span><span class="chip">Helm</span>
+        </div>
+        <div class="proj-links">
+          <a class="link" href="https://github.com/sudhamshrama/secure-supply-chain" target="_blank" rel="noopener">View repository →</a>
+        </div>
+      </article>
   </div>
 </section>
 

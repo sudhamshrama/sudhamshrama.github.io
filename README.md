@@ -40,3 +40,5 @@ resume/         résumé (PDF)
   Terraform, with a [live dashboard](https://d18zgxdvd2esd3.cloudfront.net)
 - [secure-supply-chain](https://github.com/sudhamshrama/secure-supply-chain) — SBOM,
   keyless signing, and Kyverno admission control that rejects unsigned images
+- [slo-lab](https://github.com/sudhamshrama/slo-lab) — SLOs, error budgets, and
+  multi-window burn-rate alerting proven by injected incidents

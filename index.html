@@ -228,8 +228,8 @@
     <p class="eyebrow"><b>03</b></p>
     <h2>Selected Projects</h2>
     <p class="lead">Public repositories demonstrating end-to-end delivery, supply-chain security
-      gating, GitOps delivery, event-driven infrastructure on AWS, and admission-time policy
-      enforcement.</p>
+      gating, GitOps delivery, event-driven infrastructure on AWS, admission-time policy
+      enforcement, and SLO-based reliability engineering.</p>
 
     <div class="proj-grid rv">
       <article class="proj">
@@ -290,6 +290,26 @@
         </div>
         <div class="proj-links">
           <a class="link" href="https://github.com/sudhamshrama/secure-supply-chain" target="_blank" rel="noopener">View repository →</a>
+        </div>
+      </article>
+
+      <article class="proj">
+        <p class="tag">Reliability · SRE</p>
+        <h3>SLOs and Burn-Rate Alerting</h3>
+        <p>Availability and latency objectives with multi-window burn-rate alerting in Prometheus,
+          using the thresholds from the Google SRE workbook. Validated by injecting faults into a
+          running service and timing the outcome: a 20% error injection paged in four and a half
+          minutes and cleared four minutes after the fix, and a separate latency incident confirmed
+          the two indicators burn independent budgets. Ships with Grafana dashboards, a runbook, and
+          a written postmortem.</p>
+        <div class="chips">
+          <span class="chip">Prometheus</span><span class="chip">PromQL</span>
+          <span class="chip">Grafana</span><span class="chip">Kubernetes</span>
+          <span class="chip">k6</span><span class="chip">Error Budgets</span>
+          <span class="chip">Fault Injection</span><span class="chip">Postmortems</span>
+        </div>
+        <div class="proj-links">
+          <a class="link" href="https://github.com/sudhamshrama/slo-lab" target="_blank" rel="noopener">View repository →</a>
         </div>
       </article>
   </div>
